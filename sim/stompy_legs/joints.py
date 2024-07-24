@@ -163,50 +163,50 @@ class Stompy(Node):
         #     "ankle roll": 45,
         # }
         return {
-            "shoulder": 200,
-            "elbow": 200,
-            "wrist": 200,
-            "hand": 200,
-            "torso": 200,
             "hip": 250,
+            "knee": 200,
             "ankle": 200,
-            "knee": 350,
         }
+
     # d_gains
     @classmethod
     def damping(cls) -> Dict[str, float]:
         return {
-            "shoulder": 10,
-            "elbow": 10,
-            "wrist": 10,
-            "hand": 10,
-            "torso": 10,
             "hip": 10,
-            "ankle": 10,
             "knee": 10,
+            "ankle": 2.4,
         }
+
     # pos_limits
     @classmethod
     def effort(cls) -> Dict[str, float]:
+        # return {
+        #     "hip pitch": 250,
+        #     "hip yaw": 100,
+        #     "hip roll": 100,
+        #     "knee pitch": 250,
+        #     "ankle pitch": 100,
+        #     "ankle roll": 100,
+        # }
         return {
-            "hip pitch": 150,
-            "hip yaw": 90,
-            "hip roll": 90,
-            "knee pitch": 90,
-            "ankle pitch": 80,
-            "ankle roll": 80,
+            "hip pitch": 250,
+            "hip yaw": 250,
+            "hip roll": 250,
+            "knee pitch": 250,
+            "ankle pitch": 100,
+            "ankle roll": 100,
         }
 
     # vel_limits
     @classmethod
     def velocity(cls) -> Dict[str, float]:
         return {
-            "hip pitch": 5,
-            "hip yaw": 5,
-            "hip roll": 5,
-            "knee pitch": 5,
-            "ankle pitch": 5,
-            "ankle roll": 5,
+            "hip pitch": 12,
+            "hip yaw": 12,
+            "hip roll": 12,
+            "knee pitch": 12,
+            "ankle pitch": 12,
+            "ankle roll": 12,
         }
 
     @classmethod

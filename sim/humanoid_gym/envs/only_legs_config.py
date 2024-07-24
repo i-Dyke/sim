@@ -32,9 +32,9 @@ class OnlyLegsCfg(LeggedRobotCfg):
 
     class safety:
         # safety factors
-        pos_limit = 0.9
-        vel_limit = 0.9
-        torque_limit = 0.9
+        pos_limit = 1.0
+        vel_limit = 1.0
+        torque_limit = 0.85
 
     class asset(LeggedRobotCfg.asset):
         file = str(stompy_urdf_path(legs_only=True))
@@ -44,7 +44,7 @@ class OnlyLegsCfg(LeggedRobotCfg):
         foot_name = "_foot_1_rmd_x4_24_mock_1_inner_rmd_x4_24_1"
         knee_name = "_rmd_x8_90_mock_3_inner_rmd_x8_90_1"
 
-        termination_height = 0.23
+        termination_height = 0.3
         default_feet_height = 0.0
         # terminate_after_contacts_on = ["link_leg_assembly_left_1_leg_part_1_2", "link_leg_assembly_right_1_leg_part_1_2"]
 
