@@ -88,7 +88,7 @@ class OnlyLegsCfg(LeggedRobotCfg):
 
     class init_state(LeggedRobotCfg.init_state):
         pos = [0.0, 0.0, 0.72]
-
+        rot = [0, 0, 0.7071068, 0.7071068]
         default_joint_angles = {k: 0.0 for k in Stompy.all_joints()}
 
         default_positions = Stompy.default_standing()
@@ -106,6 +106,8 @@ class OnlyLegsCfg(LeggedRobotCfg):
         dt = 0.001  # 1000 Hz
         substeps = 1  # 2
         up_axis = 1  # 0 is y, 1 is z
+        gravity = [0., 0. ,-9.81]  # [m/s^2]
+
 
         class physx(LeggedRobotCfg.sim.physx):
             num_threads = 10
@@ -115,7 +117,7 @@ class OnlyLegsCfg(LeggedRobotCfg):
             num_velocity_iterations = 1
             contact_offset = 0.01 # [m]
             rest_offset = 0.0 # [m]
-            bounce_threshold_velocity = 0.5 # [m/s]
+            bounce_threshold_velocity = 0.1 # [m/s]
             max_depenetration_velocity = 1.0
             max_gpu_contact_pairs = 2**23  # 2**24 -> needed for 8000 envs and more
             default_buffer_size_multiplier = 5
@@ -137,14 +139,15 @@ class OnlyLegsCfg(LeggedRobotCfg):
     class commands(LeggedRobotCfg.commands):
         # Vers: lin_vel_x, lin_vel_y, ang_vel_yaw, heading (in heading mode ang_vel_yaw is recomputed from heading error)
         num_commands = 4
-        resampling_time = 30.0  # time before command are changed[s]
+        resampling_time = 8.0  # time before command are changed[s]
         heading_command = True  # if true: compute ang vel command from heading error
 
         class ranges:
             lin_vel_x = [-0.3, 0.6]  # min max [m/s]
             lin_vel_y = [-0.3, 0.3]  # min max [m/s]
             ang_vel_yaw = [-0.3, 0.3]  # min max [rad/s]
-            heading = [-3.14, 3.14]
+            # only going straight
+            heading = [-0.05, 0.05]
 
     class rewards:
         # quite important to keep it right
@@ -169,14 +172,14 @@ class OnlyLegsCfg(LeggedRobotCfg):
             joint_pos = 1.6
             feet_clearance = 1.0
             feet_contact_number = 1.2
-            # # gait
+            # gait
             feet_air_time = 1.0
             foot_slip = -0.05
             feet_distance = 0.2
             knee_distance = 0.2
             # contact
             feet_contact_forces = -0.01
-            # # vel tracking
+            # # / tracking
             tracking_lin_vel = 1.2
             tracking_ang_vel = 1.1
             vel_mismatch_exp = 0.5  # lin_z; ang x,y
@@ -185,7 +188,8 @@ class OnlyLegsCfg(LeggedRobotCfg):
 
             # base pos
             default_joint_pos = 0.5
-            orientation = 1
+            # pfb30
+            orientation = 1.
             base_height = 0.2
 
             # energy
