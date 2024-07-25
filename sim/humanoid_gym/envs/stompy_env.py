@@ -1,14 +1,15 @@
 # mypy: disable-error-code="valid-newtype"
 """Defines the environment for training the humanoid."""
-
+import numpy as np
 import torch  # type: ignore[import]
 from humanoid.envs import LeggedRobot
 from humanoid.envs.base.legged_robot_config import LeggedRobotCfg
 from humanoid.utils.terrain import HumanoidTerrain
-from isaacgym import gymtorch
+from isaacgym import gymtorch, gymapi
 from isaacgym.torch_utils import *
 
-from sim.stompy2.joints import Stompy
+
+from sim.new_stompy.joints import Stompy
 
 
 class StompyFreeEnv(LeggedRobot):
@@ -56,14 +57,12 @@ class StompyFreeEnv(LeggedRobot):
 
         self.legs_joints = {}
         for name, joint in Stompy.legs.left.joints_motors():
-            print(name)
             joint_handle = self.gym.find_actor_dof_handle(env_handle, actor_handle, joint)
             self.legs_joints["left_" + name] = joint_handle
 
         for name, joint in Stompy.legs.right.joints_motors():
             joint_handle = self.gym.find_actor_dof_handle(env_handle, actor_handle, joint)
             self.legs_joints["right_" + name] = joint_handle
-
         self.compute_observations()
 
     def _push_robots(self):
@@ -117,21 +116,22 @@ class StompyFreeEnv(LeggedRobot):
         sin_pos = torch.sin(2 * torch.pi * phase)
         sin_pos_l = sin_pos.clone()
         sin_pos_r = sin_pos.clone()
+        default_clone = self.default_dof_pos.clone()
+        self.ref_dof_pos = self.default_dof_pos.repeat(self.num_envs, 1)
 
-        self.ref_dof_pos = torch.zeros_like(self.dof_pos)
         scale_1 = self.cfg.rewards.target_joint_pos_scale
         scale_2 = 2 * scale_1
         # left foot stance phase set to default joint pos
         sin_pos_l[sin_pos_l > 0] = 0
-        self.ref_dof_pos[:, self.legs_joints["left_hip_pitch"]] = sin_pos_l * scale_1
-        self.ref_dof_pos[:, self.legs_joints["left_knee_pitch"]] = sin_pos_l * scale_2
-        self.ref_dof_pos[:, self.legs_joints["left_ankle_roll"]] = sin_pos_l * scale_1
+        self.ref_dof_pos[:, self.legs_joints["left_hip_pitch"]] += sin_pos_l * scale_1
+        self.ref_dof_pos[:, self.legs_joints["left_knee_pitch"]] += sin_pos_l * scale_2
+        self.ref_dof_pos[:, self.legs_joints["left_ankle_roll"]] += sin_pos_l * scale_1
 
         # right foot stance phase set to default joint pos
         sin_pos_r[sin_pos_r < 0] = 0
-        self.ref_dof_pos[:, self.legs_joints["right_hip_pitch"]] = sin_pos_r * scale_1
-        self.ref_dof_pos[:, self.legs_joints["right_knee_pitch"]] = sin_pos_r * scale_2
-        self.ref_dof_pos[:, self.legs_joints["right_ankle_roll"]] = sin_pos_r * scale_1
+        self.ref_dof_pos[:, self.legs_joints["right_hip_pitch"]] += sin_pos_r * scale_1
+        self.ref_dof_pos[:, self.legs_joints["right_knee_pitch"]] += sin_pos_r * scale_2
+        self.ref_dof_pos[:, self.legs_joints["right_ankle_roll"]] += sin_pos_r * scale_1
 
         # Double support phase
         self.ref_dof_pos[torch.abs(sin_pos) < 0.1] = 0
@@ -193,6 +193,9 @@ class StompyFreeEnv(LeggedRobot):
         delay = torch.rand((self.num_envs, 1), device=self.device)
         actions = (1 - delay) * actions + delay * self.actions
         actions += self.cfg.domain_rand.dynamic_randomization * torch.randn_like(actions) * actions
+        # print(self.base_euler_xyz[:, :2], self.projected_gravity[:, :2])
+        # print(self.root_states[:, :7])
+
         return super().step(actions)
 
     def compute_observations(self):
@@ -300,12 +303,12 @@ class StompyFreeEnv(LeggedRobot):
         """
         Calculates the reward based on the distance between the knee of the humanoid.
         """
-        foot_pos = self.rigid_state[:, self.knee_indices, :2]
-        foot_dist = torch.norm(foot_pos[:, 0, :] - foot_pos[:, 1, :], dim=1)
+        knee_pos = self.rigid_state[:, self.knee_indices, :2]
+        knee_dist = torch.norm(knee_pos[:, 0, :] - knee_pos[:, 1, :], dim=1)
         fd = self.cfg.rewards.min_dist
         max_df = self.cfg.rewards.max_dist / 2
-        d_min = torch.clamp(foot_dist - fd, -0.5, 0.0)
-        d_max = torch.clamp(foot_dist - max_df, 0, 0.5)
+        d_min = torch.clamp(knee_dist - fd, -0.5, 0.0)
+        d_max = torch.clamp(knee_dist - max_df, 0, 0.5)
         return (torch.exp(-torch.abs(d_min) * 100) + torch.exp(-torch.abs(d_max) * 100)) / 2
 
     def _reward_foot_slip(self):
@@ -351,10 +354,39 @@ class StompyFreeEnv(LeggedRobot):
         Calculates the reward for maintaining a flat base orientation. It penalizes deviation
         from the desired base orientation using the base euler angles and the projected gravity vector.
         """
-        quat_mismatch = torch.exp(-torch.sum(torch.abs(self.base_euler_xyz[:, :2]), dim=1) * 10)
-        orientation = torch.exp(-torch.norm(self.projected_gravity[:, :2], dim=1) * 20)
+        # pfb30
+        # breakpoint()
 
-        return (quat_mismatch + orientation) / 2.0
+        # current_orientation = self.root_states[:, 3:7]
+        # original_orientation = torch.ones_like(current_orientation)
+        # original_orientation = torch.zeros_like(current_orientation)
+        # # breakpoint()
+
+        # orientation2 = torch.exp(-torch.norm(current_orientation-original_orientation, dim=1) * 20)
+        # pfb30
+        import math 
+        # Calculate linear reward component
+        # Linear reward component based on Euler angles
+        # current_euler = self.base_euler_xyz
+        # original_euler = torch.zeros_like(current_euler)  # Assuming original orientation is [0, 0, 0]
+
+        # # Calculate angular difference (considering periodic nature of angles)
+        # angle_diff = torch.abs(current_euler - original_euler)
+        # angle_diff = torch.min(angle_diff, 2 * torch.pi - angle_diff)
+
+        # # Normalize the difference to [0, 1] range
+        # max_angle_diff = torch.tensor(math.pi, device=self.device)
+        # normalized_diff = torch.sum(angle_diff, dim=1) / (3 * max_angle_diff)
+
+        # # Linear reward component: 2 when normalized_diff is 0, decreases to -1 as it approaches 1
+        # linear_reward = 2 * (1 - normalized_diff) - 1
+
+        quat_mismatch = torch.exp(-torch.sum(torch.abs(self.base_euler_xyz[:, :2]), dim=1) * 10) 
+
+        orientation = torch.exp(-torch.norm(self.projected_gravity[:, :2], dim=1) * 20)
+ 
+        # print("quat_mismatch: ", quat_mismatch, "orientation: ", orientation, "linear_reward: ", linear_reward)
+        return (quat_mismatch + orientation) / 2.0 # + linear_reward
 
     def _reward_feet_contact_forces(self):
         """
@@ -386,7 +418,6 @@ class StompyFreeEnv(LeggedRobot):
         The reward is computed based on the height difference between the robot's base and the average height
         of its feet when they are in contact with the ground.
         """
-        # breakpoint()
         stance_mask = self._get_gait_phase()
         measured_heights = torch.sum(self.rigid_state[:, self.feet_indices, 2] * stance_mask, dim=1) / torch.sum(
             stance_mask, dim=1

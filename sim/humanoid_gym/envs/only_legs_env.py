@@ -193,6 +193,8 @@ class OnlyLegsFreeEnv(LeggedRobot):
         delay = torch.rand((self.num_envs, 1), device=self.device)
         actions = (1 - delay) * actions + delay * self.actions
         actions += self.cfg.domain_rand.dynamic_randomization * torch.randn_like(actions) * actions
+        # print(self.base_euler_xyz[:, :2], self.projected_gravity[:, :2])
+        # print(self.root_states[:, :7])
         return super().step(actions)
 
     def compute_observations(self):
@@ -351,10 +353,39 @@ class OnlyLegsFreeEnv(LeggedRobot):
         Calculates the reward for maintaining a flat base orientation. It penalizes deviation
         from the desired base orientation using the base euler angles and the projected gravity vector.
         """
-        quat_mismatch = torch.exp(-torch.sum(torch.abs(self.base_euler_xyz[:, :2]), dim=1) * 10)
-        orientation = torch.exp(-torch.norm(self.projected_gravity[:, :2], dim=1) * 20)
+        # pfb30
+        # breakpoint()
 
-        return (quat_mismatch + orientation) / 2.0
+        # current_orientation = self.root_states[:, 3:7]
+        # original_orientation = torch.ones_like(current_orientation)
+        # original_orientation = torch.zeros_like(current_orientation)
+        # # breakpoint()
+
+        # orientation2 = torch.exp(-torch.norm(current_orientation-original_orientation, dim=1) * 20)
+        # pfb30
+        import math 
+        # Calculate linear reward component
+        # Linear reward component based on Euler angles
+        current_euler = self.base_euler_xyz
+        original_euler = torch.zeros_like(current_euler)  # Assuming original orientation is [0, 0, 0]
+
+        # Calculate angular difference (considering periodic nature of angles)
+        angle_diff = torch.abs(current_euler - original_euler)
+        angle_diff = torch.min(angle_diff, 2 * torch.pi - angle_diff)
+
+        # Normalize the difference to [0, 1] range
+        max_angle_diff = torch.tensor(math.pi, device=self.device)
+        normalized_diff = torch.sum(angle_diff, dim=1) / (3 * max_angle_diff)
+
+        # Linear reward component: 2 when normalized_diff is 0, decreases to -1 as it approaches 1
+        linear_reward = 2 * (1 - normalized_diff) - 1
+
+        quat_mismatch = torch.exp(-torch.sum(torch.abs(self.base_euler_xyz[:, :2]), dim=1) * 10)
+
+        orientation = torch.exp(-torch.norm(self.projected_gravity[:, :2], dim=1) * 20)
+ 
+        # print("quat_mismatch: ", quat_mismatch, "orientation: ", orientation, "linear_reward: ", linear_reward)
+        return (quat_mismatch + orientation) / 2.0 # + linear_reward
 
     def _reward_feet_contact_forces(self):
         """

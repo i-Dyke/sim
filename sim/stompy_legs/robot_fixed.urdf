@@ -48,6 +48,33 @@
     <parent link="link_leg_assembly_left_1_leg_part_1_2" />
     <child link="link_leg_assembly_right_1_leg_part_1_2" />
     </joint>
+  <link name="link_part_1_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/part_1_1_simple.stl" />
+        </geometry>
+      <material name="link_part_1_1_material">
+        <color rgba="0.61568627 0.81176471 0.92941176 1" />
+        </material>
+      </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/part_1_1_simple.stl" />
+        </geometry>
+      </collision>
+    <inertial>
+      <mass value="0.001" />
+      <inertia ixx="0" iyy="0" izz="0" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.04879037 0.04879037 0" rpy="3.1415927 0 0" />
+      </inertial>
+    </link>
+  <joint name="joint_fastened_10" type="fixed">
+    <origin xyz="0.02779169 -0.048790465 0.050524107" rpy="3.1415927 0 -1.5707963" />
+    <parent link="link_leg_assembly_left_1_leg_part_1_2" />
+    <child link="link_part_1_1" />
+    </joint>
   <link name="link_leg_assembly_left_1_rmd_x12_150_mock_1_outer_x12_150_1">
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
@@ -65,8 +92,8 @@
         </geometry>
       </collision>
     <inertial>
-      <mass value="0.18332765" />
-      <inertia ixx="0.00034879882" iyy="0.0002115364" izz="0.00021637061" ixy="0" ixz="0" iyz="0" />
+      <mass value="1.1505225" />
+      <inertia ixx="0.0021889818" iyy="0.0013275542" izz="0.0013578926" ixy="0" ixz="0" iyz="0" />
       <origin xyz="-0.0071587856 -0.057541153 0.015897698" rpy="1.5714571 -0.00071109293 -1.5709195" />
       </inertial>
     </link>
@@ -92,8 +119,8 @@
         </geometry>
       </collision>
     <inertial>
-      <mass value="0.18332765" />
-      <inertia ixx="0.00034879882" iyy="0.0002115364" izz="0.00021637061" ixy="0" ixz="0" iyz="0" />
+      <mass value="1.1505225" />
+      <inertia ixx="0.0021889818" iyy="0.0013275542" izz="0.0013578926" ixy="0" ixz="0" iyz="0" />
       <origin xyz="-0.0071587856 -0.057541153 0.015897698" rpy="1.5714571 -0.00071109293 -1.5709195" />
       </inertial>
     </link>
@@ -119,8 +146,8 @@
         </geometry>
       </collision>
     <inertial>
-      <mass value="0.023817612" />
-      <inertia ixx="6.6689509e-06" iyy="6.6689509e-06" izz="1.1425082e-05" ixy="0" ixz="0" iyz="0" />
+      <mass value="0.1494739" />
+      <inertia ixx="4.1852816e-05" iyy="4.1852816e-05" izz="7.1701209e-05" ixy="0" ixz="0" iyz="0" />
       <origin xyz="0 0 -0.010858971" rpy="3.1415927 0 0" />
       </inertial>
     </link>
@@ -128,7 +155,7 @@
     <origin xyz="-0.0071596999 -0.057556396 0.0245" rpy="3.1415927 0 -1.5707963" />
     <parent link="link_leg_assembly_left_1_rmd_x12_150_mock_1_outer_x12_150_1" />
     <child link="link_leg_assembly_left_1_rmd_x12_150_mock_1_inner_x12_150_1" />
-    <limit effort="150" velocity="25" lower="0.5" upper="2.69" />
+    <limit effort="150" velocity="40" lower="0.5" upper="2.69" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_right_1_rmd_x12_150_mock_1_inner_x12_150_1">
@@ -148,8 +175,8 @@
         </geometry>
       </collision>
     <inertial>
-      <mass value="0.023817612" />
-      <inertia ixx="6.6689509e-06" iyy="6.6689509e-06" izz="1.1425082e-05" ixy="0" ixz="0" iyz="0" />
+      <mass value="0.1494739" />
+      <inertia ixx="4.1852816e-05" iyy="4.1852816e-05" izz="7.1701209e-05" ixy="0" ixz="0" iyz="0" />
       <origin xyz="0 0 -0.010858971" rpy="3.1415927 0 0" />
       </inertial>
     </link>
@@ -157,7 +184,7 @@
     <origin xyz="-0.0071596999 -0.057556396 0.0245" rpy="3.1415927 0 -1.5707963" />
     <parent link="link_leg_assembly_right_1_rmd_x12_150_mock_1_outer_x12_150_1" />
     <child link="link_leg_assembly_right_1_rmd_x12_150_mock_1_inner_x12_150_1" />
-    <limit effort="150" velocity="25" lower="-1" upper="1" />
+    <limit effort="150" velocity="40" lower="-1" upper="1" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_left_1_leg_part_2_left_1">
@@ -232,8 +259,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="0.018560146 -0.044808157 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0.018560146 -0.044808157 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_left_1_fastened_2" type="fixed">
@@ -259,8 +286,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="0.018560146 0.044808157 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0.018560146 0.044808157 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_right_1_fastened_85" type="fixed">
@@ -294,7 +321,7 @@
     <origin xyz="0.018560146 -0.044808157 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_left_1_rmd_x8_90_mock_1_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_left_1_rmd_x8_90_mock_1_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="0.5" upper="1.19" />
+    <limit effort="90" velocity="40" lower="0.98" upper="1.08" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_right_1_rmd_x8_90_mock_1_inner_rmd_x8_90_1">
@@ -323,7 +350,7 @@
     <origin xyz="0.018560146 0.044808157 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_right_1_rmd_x8_90_mock_1_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_right_1_rmd_x8_90_mock_1_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="-2.6" upper="-1.5" />
+    <limit effort="90" velocity="40" lower="-2.2" upper="-2.1" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_left_1_leg_part_3_1">
@@ -425,8 +452,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="-0.044808157 0.018560146 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.044808157 0.018560146 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_left_1_fastened_5" type="fixed">
@@ -479,8 +506,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="-0.044808157 0.018560146 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.044808157 0.018560146 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_right_1_fastened_5" type="fixed">
@@ -514,7 +541,7 @@
     <origin xyz="-0.044808157 0.018560146 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_left_1_rmd_x8_90_mock_2_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_left_1_rmd_x8_90_mock_2_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="-0.5" upper="0.5" />
+    <limit effort="90" velocity="40" lower="0.05" upper="0.15" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_right_1_rmd_x8_90_mock_2_inner_rmd_x8_90_1">
@@ -543,7 +570,7 @@
     <origin xyz="-0.044808157 0.018560146 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_right_1_rmd_x8_90_mock_2_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_right_1_rmd_x8_90_mock_2_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="-2.39" upper="-1" />
+    <limit effort="90" velocity="40" lower="-1.63" upper="-1.57" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_left_1_let_part_5_left_1">
@@ -618,8 +645,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="-0.018560146 0.044808157 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.018560146 0.044808157 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_left_1_fastened_91" type="fixed">
@@ -645,8 +672,8 @@
       </collision>
     <inertial>
       <mass value="0.49985879" />
-      <inertia ixx="0.0004826628" iyy="0.00046409105" izz="0.00077010699" ixy="0" ixz="0" iyz="0" />
-      <origin xyz="-0.018560146 -0.044808157 -0.019816187" rpy="0 1.5707963 0" />
+      <inertia ixx="0.00048280871" iyy="0.00046437396" izz="0.00076940631" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="-0.018560146 -0.044808157 -0.019942948" rpy="0 1.5707963 0" />
       </inertial>
     </link>
   <joint name="joint_leg_assembly_right_1_fastened_7" type="fixed">
@@ -680,7 +707,7 @@
     <origin xyz="-0.018560146 0.044808157 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_left_1_rmd_x8_90_mock_3_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_left_1_rmd_x8_90_mock_3_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="0.5" upper="2.5" />
+    <limit effort="90" velocity="40" lower="0.5" upper="2.5" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_right_1_rmd_x8_90_mock_3_inner_rmd_x8_90_1">
@@ -709,7 +736,7 @@
     <origin xyz="-0.018560146 -0.044808157 -0.0475" rpy="3.1415927 0 0" />
     <parent link="link_leg_assembly_right_1_rmd_x8_90_mock_3_outer_rmd_x8_90_1" />
     <child link="link_leg_assembly_right_1_rmd_x8_90_mock_3_inner_rmd_x8_90_1" />
-    <limit effort="90" velocity="25" lower="2.09" upper="3.2" />
+    <limit effort="90" velocity="40" lower="2.09" upper="3.2" />
     <axis xyz="0 0 -1" />
     </joint>
   <link name="link_leg_assembly_left_1_leg_part_6_2">

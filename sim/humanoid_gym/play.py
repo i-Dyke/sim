@@ -69,7 +69,7 @@ def play(args: argparse.Namespace) -> None:
     env_logger = Logger(env.dt)
     robot_index = 0  # which robot is used for logging
     joint_index = 1  # which joint is used for logging
-    stop_state_log = 500  # number of steps before plotting states
+    stop_state_log = 5000  # number of steps before plotting states
 
     if RENDER:
         camera_properties = gymapi.CameraProperties()
@@ -108,7 +108,7 @@ def play(args: argparse.Namespace) -> None:
 
         if FIX_COMMAND:
             env.commands[:, 0] = 0.5
-            env.commands[:, 1] = 0.0 # negative left, positive right
+            env.commands[:, 1] = 0.5 # negative left, positive right
             env.commands[:, 2] = 0.0
             env.commands[:, 3] = 0.0
         obs, critic_obs, rews, dones, infos, _ = env.step(actions.detach())

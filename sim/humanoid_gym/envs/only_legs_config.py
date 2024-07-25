@@ -106,8 +106,7 @@ class OnlyLegsCfg(LeggedRobotCfg):
         dt = 0.001  # 1000 Hz
         substeps = 1  # 2
         up_axis = 1  # 0 is y, 1 is z
-        gravity = [0., 0. ,-9.81]  # [m/s^2]
-
+        gravity = [0., 0., -9.81]  # [m/s^2]
 
         class physx(LeggedRobotCfg.sim.physx):
             num_threads = 10
@@ -165,13 +164,13 @@ class OnlyLegsCfg(LeggedRobotCfg):
         only_positive_rewards = True
         # tracking reward = exp(error*sigma)
         tracking_sigma = 5
-        max_contact_force = 100  # forces above this value are penalized
+        max_contact_force = 400  # forces above this value are penalized
 
         class scales:
             # reference motion tracking
             joint_pos = 1.6
-            feet_clearance = 1.0
-            feet_contact_number = 1.2
+            feet_clearance = 1.2
+            feet_contact_number = 1.3
             # gait
             feet_air_time = 1.0
             foot_slip = -0.05
