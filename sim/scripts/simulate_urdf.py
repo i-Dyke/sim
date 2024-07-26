@@ -14,8 +14,8 @@ from typing import Any, Dict, Literal, NewType
 from isaacgym import gymapi, gymtorch, gymutil
 from sim.env import stompy_urdf_path
 from sim.logging import configure_logging
-from sim.stompy_legs.joints import Stompy
-
+# from sim.stompy_legs.joints import Stompy
+from sim.new_stompy.joints import Stompy
 logger = logging.getLogger(__name__)
 
 Gym = NewType("Gym", Any)
@@ -123,7 +123,7 @@ def load_gym() -> GymParams:
     # Adds the robot to the environment.
     initial_pose = gymapi.Transform()
     initial_pose.p = gymapi.Vec3(0.0, 1.0, 0.0)
-    initial_pose.r = gymapi.Quat(-1.0, 0.0, 0.0, 1.0)
+    initial_pose.r = gymapi.Quat(0, 0.0, 0.0, 1.0)
     robot = gym.create_actor(env, robot_asset, initial_pose, "robot")
 
     # Configure DOF properties.
@@ -144,16 +144,19 @@ def load_gym() -> GymParams:
     gym.refresh_dof_state_tensor(sim)
     dof_state = gymtorch.wrap_tensor(dof_state_tensor)
     num_dof = len(Stompy.all_joints())
-    dof_pos = dof_state.view(1, num_dof, 2)[..., 0]
-    # dof_vel = dof_state.view(1, num_dof, 2)[..., 1]
+    # dof_pos = dof_state.view(1, num_dof, 2)[..., 0]
+    # # dof_vel = dof_state.view(1, num_dof, 2)[..., 1]
 
-    # Resets the DOF positions to the starting positions.
-    # dof_vel[:] = 0.0
-    starting_positions = Stompy.default_standing()
-    dof_ids: Dict[str, int] = gym.get_actor_dof_dict(env, robot)
-    print(starting_positions)
-    for joint_name, joint_position in starting_positions.items():
-        dof_pos[0, dof_ids[joint_name]] = joint_position
+    # # Resets the DOF positions to the starting positions.
+    # # dof_vel[:] = 0.0
+    # starting_positions = Stompy.default_standing()
+    # dof_ids: Dict[str, int] = gym.get_actor_dof_dict(env, robot)
+    # print(starting_positions)
+    # for joint_name, joint_position in starting_positions.items():
+    #     dof_pos[0, dof_ids[joint_name]] = joint_position
+    
+    
+    
     env_ids_int32 = torch.zeros(1, dtype=torch.int32)
     gym.set_dof_state_tensor_indexed(
         sim,
@@ -161,7 +164,7 @@ def load_gym() -> GymParams:
         gymtorch.unwrap_tensor(env_ids_int32),
         1,
     )
-    print(dof_pos)
+
 
     return GymParams(
         gym=gym,
