@@ -7,7 +7,7 @@ from humanoid.envs.base.legged_robot_config import (  # type: ignore
 
 from sim.env import stompy_urdf_path
 from sim.new_stompy.joints import Stompy
-
+from scipy.spatial.transform import Rotation as R
 NUM_JOINTS = len(Stompy.all_joints())  # 12
 
 
@@ -32,9 +32,9 @@ class StompyCfg(LeggedRobotCfg):
 
     class safety:
         # safety factors
-        pos_limit = 0.011
-        vel_limit = 0.001
-        torque_limit = 0.001
+        pos_limit = 1.0
+        vel_limit = 1.0
+        torque_limit = 0.85
 
     class asset(LeggedRobotCfg.asset):
 
@@ -46,13 +46,13 @@ class StompyCfg(LeggedRobotCfg):
         foot_name = "oot"
         knee_name = "nee"
 
-        termination_height = 0.23
+        termination_height = -1.23
         default_feet_height = 0.0
 
         penalize_contacts_on = []
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
 
-        collapse_fixed_joints = False
+        collapse_fixed_joints = True
         # default_dof_drive_mode = 3  # see GymDofDriveModeFlags (0 is none, 1 is pos tgt, 2 is vel tgt, 3 effort)
         flip_visual_attachments = False
         replace_cylinder_with_capsule = False
@@ -76,7 +76,7 @@ class StompyCfg(LeggedRobotCfg):
         restitution = 0.0
 
     class noise:
-        add_noise = False
+        add_noise = True
         noise_level = 0.6  # scales other values
 
         class noise_scales:
@@ -88,7 +88,12 @@ class StompyCfg(LeggedRobotCfg):
             height_measurements = 0.1
 
     class init_state(LeggedRobotCfg.init_state):
-        pos = [0.0, 0.0, 1.72]
+        pos = [0.0, 0.0, 0.62]
+
+
+        # transform change fro euler to quat
+        rot = R.from_euler("xyz", [30, 30, 0], degrees=True).as_quat().tolist()
+        # breakpoint()
         #rot = [0, 0, 0.7071068, 0.7071068]
         default_joint_angles = {k: 0.0 for k in Stompy.all_joints()}
 
@@ -112,7 +117,7 @@ class StompyCfg(LeggedRobotCfg):
         class physx(LeggedRobotCfg.sim.physx):
             num_threads = 10
             # pfb30
-            solver_type = 0 # 0: pgs, 1: tgs
+            solver_type = 1 # 0: pgs, 1: tgs
             num_position_iterations = 4
             num_velocity_iterations = 1
             contact_offset = 0.01 # [m]
@@ -169,33 +174,33 @@ class StompyCfg(LeggedRobotCfg):
 
         class scales:
             # reference motion tracking
-            # joint_pos = 1.6
-            # feet_clearance = 1.2
-            # feet_contact_number = 1.3
-            # # gait
-            # feet_air_time = 1.0
-            # foot_slip = -0.05
-            # feet_distance = 0.2
-            # knee_distance = 0.2
-            # # contact
-            # #feet_contact_forces = -0.01
-            # # # / tracking
-            # tracking_lin_vel = 1.2
-            # tracking_ang_vel = 1.1
-            # vel_mismatch_exp = 0.5  # lin_z; ang x,y
-            # low_speed = 0.2
-            # track_vel_hard = 0.5
+            joint_pos = 1.6
+            feet_clearance = 1.2
+            feet_contact_number = 1.3
+            # gait
+            feet_air_time = 1.0
+            foot_slip = -0.05
+            feet_distance = 0.2
+            knee_distance = 0.2
+            # contact
+            # feet_contact_forces = -0.01
+            # # / tracking
+            tracking_lin_vel = 1.2
+            tracking_ang_vel = 1.1
+            vel_mismatch_exp = 0.5  # lin_z; ang x,y
+            low_speed = 0.2
+            track_vel_hard = 0.5
 
-            # # base pos
-            # default_joint_pos = 0.5
-            # # pfb30
-            # orientation = 1.
-            # base_height = 0.2
+            # base pos
+            default_joint_pos = 0.5
+            # pfb30
+            orientation = 1.
+            base_height = 0.2
 
-            # # energy
-            # action_smoothness = -0.002
-            # torques = -1e-5
-            # dof_vel = -5e-4
+            # energy
+            action_smoothness = -0.002
+            torques = -1e-5
+            dof_vel = -5e-4
             dof_acc = -1e-7
             base_acc = 0.2
             collision = -1.0

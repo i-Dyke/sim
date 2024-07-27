@@ -359,7 +359,7 @@
     <parent link="Knee motor" />
     <child link="Knee motor inner" />
     <axis xyz="0 1 0" />
-    <limit lower="-1.57" upper="0" effort="0" velocity="0" />
+    <limit lower="-1.57" upper="0" effort="90" velocity="40" />
   </joint>
   <link name="Calf part 1">
     <inertial>
@@ -502,7 +502,7 @@
     <parent link="Ankle Front piece" />
     <child link="Foot motor fixed" />
     <axis xyz="0 -1 0" />
-    <limit lower="-0.45" upper="0.45" effort="0" velocity="0" />
+    <limit lower="-0.45" upper="0.45" effort="24" velocity="24" />
   </joint>
   <link name="Foot motor inner">
     <inertial>
