@@ -48,20 +48,6 @@ from sim.scripts.create_mjcf import load_embodiment
 
 import torch  # isort: skip
 
-JOINT_NAMES = [
-    "left hip pitch",
-    "left hip yaw",
-    "left hip roll",
-    "left knee pitch",
-    "left ankle pitch",
-    "left ankle roll",
-    "right hip pitch",
-    "right hip yaw",
-    "right hip roll",
-    "right knee pitch",
-    "right ankle pitch",
-    "right ankle roll",
-]
 
 
 class cmd:
@@ -128,7 +114,7 @@ def run_mujoco(policy, cfg):
     data.qpos = model.keyframe("default").qpos
     default = deepcopy(model.keyframe("default").qpos)[-cfg.num_actions :]
     mujoco.mj_step(model, data)
-
+    
     data.qvel = np.zeros_like(data.qvel)
     data.qacc = np.zeros_like(data.qacc)
     viewer = mujoco_viewer.MujocoViewer(model, data)

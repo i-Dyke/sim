@@ -2,6 +2,7 @@ import argparse
 import logging
 import os
 from datetime import datetime
+import time
 
 import cv2
 import h5py
@@ -45,7 +46,8 @@ def play(args: argparse.Namespace) -> None:
     env_cfg.noise.curriculum = False
     env_cfg.noise.noise_level = 0.5
 
-    train_cfg.seed = 123145
+    train_cfg.seed = int(time.time() * 400) % 900000#123145
+    env_cfg.seed = train_cfg.seed
     logger.info("train_cfg.runner_class_name: %s", train_cfg.runner_class_name)
 
     # prepare environment
@@ -70,7 +72,7 @@ def play(args: argparse.Namespace) -> None:
     env_logger = Logger(env.dt)
     robot_index = 0
     joint_index = 1
-    stop_state_log = 1000
+    stop_state_log = 200000#250
     now = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     if args.log_h5:
         h5_file = h5py.File(f"data{now}.h5", "w")
@@ -217,7 +219,7 @@ def play(args: argparse.Namespace) -> None:
 from humanoid.utils import Logger, get_args, task_registry  # noqa: E402
 
 if __name__ == "__main__":
-    RENDER = True
+    RENDER = False
     FIX_COMMAND = True
 
     base_args = get_args()
