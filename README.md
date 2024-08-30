@@ -26,7 +26,7 @@ the Isaac Gym library and Humanoid-gym and provides a simple interface for
 running experiments with Stompy. For a start, we have defined two tasks:
 getting up and walking.
 
-We will be adding more tasks and simulator environments in upcoming weeks.
+We currently support Stompy mini, Xbot, G1 and H1 with more humanoids to come.
 
 The walking task works reliably with upper body being fixed.
 The getting up task is still an open challenge!
