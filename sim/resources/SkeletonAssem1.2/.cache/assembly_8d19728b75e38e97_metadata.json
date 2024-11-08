@@ -1,0 +1,101 @@
+{
+  "jsonType": "metadata-element",
+  "elementType": 1,
+  "mimeType": "onshape/assembly",
+  "elementId": "1a04575f5da9887ca8043a20",
+  "properties": [
+    {
+      "name": "Name",
+      "value": "SkeletonAssem1.2"
+    },
+    {
+      "name": "Description",
+      "value": null
+    },
+    {
+      "name": "Category",
+      "value": [
+        {
+          "memberCategoryIds": null,
+          "memberCategories": null,
+          "ownerType": 2,
+          "description": "Category created by upgrade",
+          "ownerId": "556f3109e4b00b3fee9a3f4a",
+          "publishState": 1,
+          "objectTypes": [
+            3
+          ],
+          "defaultObjectType": 3,
+          "name": "Onshape Assembly",
+          "id": "5877a03ebe4c21163b49dce3",
+          "href": null
+        }
+      ]
+    },
+    {
+      "name": "Part number",
+      "value": null
+    },
+    {
+      "name": "Revision",
+      "value": null
+    },
+    {
+      "name": "State",
+      "value": "0"
+    },
+    {
+      "name": "Vendor",
+      "value": null
+    },
+    {
+      "name": "Project",
+      "value": null
+    },
+    {
+      "name": "Product line",
+      "value": null
+    },
+    {
+      "name": "Title 1",
+      "value": null
+    },
+    {
+      "name": "Title 2",
+      "value": null
+    },
+    {
+      "name": "Title 3",
+      "value": null
+    },
+    {
+      "name": "Not revision managed",
+      "value": false
+    },
+    {
+      "name": "Exclude from all BOMs",
+      "value": false
+    },
+    {
+      "name": "Unit of measure",
+      "value": "Each"
+    },
+    {
+      "name": "Mass",
+      "value": null
+    },
+    {
+      "name": "Center of mass",
+      "value": null
+    },
+    {
+      "name": "Inertia",
+      "value": null
+    },
+    {
+      "name": "Subassembly BOM behavior",
+      "value": "0"
+    }
+  ],
+  "href": "https://cad.onshape.com/api/metadata/d/ab1e3ecf79386676f5aafbf3/m/c263efda9efd8a2217a3c8f8/e/1a04575f5da9887ca8043a20?configuration=default"
+}

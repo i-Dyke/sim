@@ -1,0 +1,2942 @@
+{
+  "rootAssembly": {
+    "occurrences": [
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.998834011204745,
+          -0.04827647523006681,
+          -3.7035343985052897e-16,
+          -0.07611115165380274,
+          -0.04827647523006681,
+          0.998834011204745,
+          -1.7733585157177564e-17,
+          0.05982133258746891,
+          3.707777268739599e-16,
+          1.6645066972950364e-19,
+          -1.0,
+          -0.340202837757766,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          0.5790954137665604,
+          0.0,
+          1.0,
+          0.0,
+          -0.18816403097179304,
+          0.0,
+          0.0,
+          1.0,
+          -0.33991877091599354,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": true,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          5.551115123125783e-17,
+          0.0,
+          1.0,
+          0.0,
+          0.07619999999999999,
+          0.0,
+          0.0,
+          1.0,
+          0.053497162242234234,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MFKV0aEk5iMZLWs7E"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.9988340112047456,
+          -0.04827647523006682,
+          5.230839473478057e-16,
+          0.07611115165380285,
+          0.04827647523006685,
+          0.998834011204746,
+          -2.763929707168845e-16,
+          0.067178667412531,
+          -6.839467437993341e-16,
+          3.067239417404234e-16,
+          1.0000000000000004,
+          -0.34020283775776605,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          0.47490268000191194,
+          0.0,
+          1.0,
+          0.0,
+          0.016813511190148483,
+          0.0,
+          0.0,
+          1.0,
+          -0.3756842586166942,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          0.11672647297382356,
+          0.0,
+          1.0,
+          0.0,
+          0.2271444946527481,
+          0.0,
+          0.0,
+          1.0,
+          -0.09506510295867916,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MuMgdbZJHAkJFo4N7"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.21401568213743907,
+          -0.8144507677282201,
+          -0.539321086873265,
+          -0.0787847188178784,
+          -0.07207541659692582,
+          0.563774633533508,
+          -0.8227777931534969,
+          0.15290008512091335,
+          0.9741675534124643,
+          -0.13721555863338497,
+          -0.17935849114915592,
+          -0.5134098287545019,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "M25DFMiCcZAdAxBN+"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.4836109093560181,
+          -0.8155666354237591,
+          0.3177602107492488,
+          -0.13000773129104443,
+          0.4233551702985288,
+          -0.5356999939197831,
+          -0.7306133836002863,
+          0.18841167564758854,
+          0.7660880420247775,
+          -0.21880717469476632,
+          0.6043447130311786,
+          -0.409426853143537,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "MG7seNqT0uk3Gue5m"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.836340065153322,
+          -0.5393210868732825,
+          -0.09832629695682804,
+          0.000614487238991764,
+          0.5482109953470536,
+          -0.8227777931535244,
+          -0.15000469217348386,
+          0.04130843925219646,
+          1.372132024551449e-16,
+          -0.17935849114916197,
+          0.9837837829791457,
+          -0.24025040540708467,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "MQkWwHFRljMmJsSh7"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.5593199790265422,
+          0.8155666354237636,
+          -0.148365171941812,
+          -0.13351036117537649,
+          0.6328276120588305,
+          0.5356999939197856,
+          0.5590659441696281,
+          0.23876133859707055,
+          0.5354347527735657,
+          0.21880717469476751,
+          -0.8157407957337969,
+          -0.5196411827222887,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "Mdl3/5KyNcTPw42ox"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.21401568213743835,
+          0.81556663542376,
+          -0.5376321707104325,
+          -0.08422071714416934,
+          -0.0720754165969255,
+          0.5356999939197835,
+          0.8413267206244697,
+          0.1510693695393514,
+          0.9741675534124614,
+          0.21880717469476696,
+          -0.05586589460904338,
+          -0.4886659728978254,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "Mn+608GR1CIPU+IFC"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.48361090935601897,
+          -0.25137927054960724,
+          -0.8384085821899683,
+          -0.14229144838868768,
+          0.4233551702985293,
+          0.7711941041751564,
+          -0.47542618088089594,
+          0.19916489697317138,
+          0.7660880420247795,
+          -0.5848658957602493,
+          -0.26653516811709166,
+          -0.38996821687610683,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "M+13iFfesRBZjBajq",
+          "MuJQTXP/hrRqhDxcz"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -1.0,
+          3.3882539291258457e-16,
+          1.7749035504227457e-16,
+          0.11429999999999996,
+          1.5701540062963138e-17,
+          0.5000000000000001,
+          -0.8660254037844386,
+          0.06349999999999999,
+          -3.8217657523067945e-16,
+          -0.8660254037844386,
+          -0.5000000000000001,
+          0.12969716224223324,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf",
+          "M0FIdWEAZ5VUFxGcO"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -1.0,
+          -1.7749035504227457e-16,
+          -2.54210062426504e-17,
+          0.0635,
+          -1.664216595146544e-16,
+          0.8660254037844386,
+          0.5000000000000001,
+          0.06349999999999992,
+          -6.672994032523925e-17,
+          0.5000000000000001,
+          -0.8660254037844386,
+          0.12969716224223327,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf",
+          "MDahaaVSwRAjtmgt7"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -1.0,
+          -1.8488927466117464e-32,
+          4.553079989440441e-16,
+          0.13969999999999996,
+          1.8488927466117464e-32,
+          1.0,
+          -8.418156567219518e-48,
+          0.06349999999999997,
+          -4.553079989440441e-16,
+          0.0,
+          -1.0,
+          0.12969716224223324,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf",
+          "MO9ayVX4tvryWIv7a"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -1.0,
+          -2.54210062426504e-17,
+          1.7749035504227457e-16,
+          0.08889999999999998,
+          -1.664216595146544e-16,
+          0.5000000000000001,
+          -0.8660254037844386,
+          0.06349999999999995,
+          -6.672994032523925e-17,
+          -0.8660254037844386,
+          -0.5000000000000001,
+          0.1296971622422333,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf",
+          "MX4NLzTBFhZEAWf5N"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -1.0,
+          -1.7561580966232375e-16,
+          -2.0471277897927113e-16,
+          0.012700000000000045,
+          -2.544441419633806e-16,
+          0.8660254037844386,
+          0.5000000000000001,
+          0.0634999999999998,
+          8.947856224419595e-17,
+          0.4999999999999999,
+          -0.8660254037844386,
+          0.1296971622422335,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MAqtEnFUsX9PUNTqf",
+          "Mlk3Qp6hfxIcrwqu+"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.046084205075057304,
+          0.837807443686435,
+          0.5440174016943324,
+          0.12503047876425974,
+          0.1764618952831156,
+          -0.5292039419891833,
+          0.8299423999870318,
+          -0.04446000103131709,
+          0.9832280740274526,
+          0.13424557753146404,
+          -0.12345314640605146,
+          -0.5150207893198455,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "M25DFMiCcZAdAxBN+"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.038243741373381046,
+          -0.2729984518124199,
+          0.9612540047010414,
+          0.28725762436130015,
+          0.17432552607629057,
+          -0.9490292780529214,
+          -0.2625910134726302,
+          -0.05651662381443143,
+          0.9839451342447872,
+          0.15752864725622706,
+          0.08388502899583539,
+          -0.3065147674221366,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "MG7seNqT0uk3Gue5m"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.8363400651533224,
+          0.5440174016943496,
+          0.06767837226997576,
+          -0.0037283163871756346,
+          -0.5482109953470216,
+          0.8299423999870215,
+          0.10324881250861716,
+          0.08094116337384832,
+          1.1402638807732043e-14,
+          -0.12345314640605276,
+          0.9923504021476183,
+          -0.23938003689956697,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "MQkWwHFRljMmJsSh7"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.8515922582473342,
+          0.27299845181242366,
+          -0.44750695078540104,
+          0.02038987839356763,
+          0.3145732515109427,
+          0.9490292780529347,
+          -0.019674827373834,
+          -0.017955594510000467,
+          0.41932600101481377,
+          -0.1575286472562295,
+          -0.8940639966839875,
+          -0.536688366431855,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "Mdl3/5KyNcTPw42ox"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.0460842050750567,
+          0.27299845181242255,
+          -0.9609100329118433,
+          0.1238599399553533,
+          0.1764618952831138,
+          0.9490292780529307,
+          0.26116015950264565,
+          -0.03997786889112593,
+          0.9832280740274412,
+          -0.15752864725622895,
+          -0.09190908408819351,
+          -0.4900467962395482,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "Mn+608GR1CIPU+IFC"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          -0.038243741373382975,
+          -0.9946000512280322,
+          0.09647877664529127,
+          0.2862862333304155,
+          0.17432552607629725,
+          -0.10170944104392184,
+          -0.9794211558674827,
+          -0.0520887554520908,
+          0.9839451342448244,
+          -0.02063801588671916,
+          0.1772739267243473,
+          -0.2815225610123032,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MKPPYeq9lt3DDVmBl",
+          "MuJQTXP/hrRqhDxcz"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          -4.07027477201586e-16,
+          -7.961320347119183e-16,
+          -0.11430000000000003,
+          -8.399011259729117e-16,
+          -0.7330039167666635,
+          -0.6802244173835263,
+          0.06350000000000028,
+          -3.0669786564875854e-16,
+          0.6802244173835263,
+          -0.7330039167666635,
+          0.12969716224223427,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi",
+          "M0FIdWEAZ5VUFxGcO"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.9994637798867188,
+          0.027580468024351424,
+          0.017648526231717948,
+          -0.06356809995438556,
+          -0.02227309339029,
+          0.967735632218888,
+          -0.2509813846578615,
+          0.060671317139432995,
+          -0.024001291744848004,
+          0.2504537161183895,
+          0.9678310152485884,
+          0.12664899819063966,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi",
+          "MDahaaVSwRAjtmgt7"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          -4.553079989440441e-16,
+          -0.1397000000000001,
+          0.0,
+          1.0,
+          0.0,
+          0.06349999999999995,
+          4.553079989440441e-16,
+          0.0,
+          1.0,
+          0.1296971622422341,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi",
+          "MO9ayVX4tvryWIv7a"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.9994637798867037,
+          -4.0702747720158387e-16,
+          -0.03274374283117198,
+          -0.08895447996351093,
+          -0.022273093390289832,
+          -0.73300391676666,
+          -0.6798596673693631,
+          0.06123705371154649,
+          -0.02400129174484818,
+          0.680224417383523,
+          -0.7326108653233655,
+          0.1272586310009582,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi",
+          "MX4NLzTBFhZEAWf5N"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.9903446683576497,
+          0.027580468024350897,
+          -0.13585564264745356,
+          -0.01696459772723067,
+          -0.060504470280937556,
+          0.9677356322188824,
+          -0.24459549302874853,
+          0.04206045848080224,
+          0.12472628805355332,
+          0.250453716118388,
+          0.9600605653555929,
+          0.19342798205383024,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MX/MVQhLo3HEw5Xxi",
+          "Mlk3Qp6hfxIcrwqu+"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          0.9999999999999998,
+          1.110223024625157e-16,
+          1.6406388704961134e-16,
+          6.276374391231659e-17,
+          5.201752303618882e-31,
+          1.0000000000000002,
+          0.0,
+          0.06349999999999997,
+          -1.6406388704961132e-16,
+          0.0,
+          1.0,
+          -0.26400283775776584,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MuMgdbZJHAkJFo4N7",
+          "Mevpj2u1ZYmgVDTjt"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": true,
+        "transform": [
+          0.8363400651532749,
+          0.5482109953470228,
+          1.64063887049612e-16,
+          -1.2605205507859596e-16,
+          -0.5482109953470228,
+          0.8363400651532749,
+          4.739472851893939e-31,
+          0.06349999999999927,
+          -1.3721320245513551e-16,
+          -8.99416271531367e-17,
+          0.9999999999999993,
+          -0.2386028377577659,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MuMgdbZJHAkJFo4N7",
+          "Mjv9+PPCWkAHSx9xE"
+        ]
+      }
+    ],
+    "instances": [
+      {
+        "name": "Body-Ext <1>",
+        "suppressed": false,
+        "id": "MFKV0aEk5iMZLWs7E",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "bc2a207a980b7b31f13d217c",
+        "type": "Part",
+        "isStandardContent": false,
+        "partId": "JHD"
+      },
+      {
+        "name": "RArm <1>",
+        "suppressed": false,
+        "id": "MX/MVQhLo3HEw5Xxi",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "abb93a8bd3ccff4656494450",
+        "type": "Assembly"
+      },
+      {
+        "name": "Hip <1>",
+        "suppressed": false,
+        "id": "MuMgdbZJHAkJFo4N7",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "d759a3841485268fa8ac214a",
+        "type": "Assembly"
+      },
+      {
+        "name": "LLeg <1>",
+        "suppressed": false,
+        "id": "MKPPYeq9lt3DDVmBl",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "66df945eefdba5ae5e47910a",
+        "type": "Assembly"
+      },
+      {
+        "name": "RLeg <1>",
+        "suppressed": false,
+        "id": "M+13iFfesRBZjBajq",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "49c9c02724db9aba20f5984b",
+        "type": "Assembly"
+      },
+      {
+        "name": "LArm <1>",
+        "suppressed": false,
+        "id": "MAqtEnFUsX9PUNTqf",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+        "documentId": "ab1e3ecf79386676f5aafbf3",
+        "elementId": "584f0ec3b7bb723a8c46ed1a",
+        "type": "Assembly"
+      }
+    ],
+    "patterns": [],
+    "features": [
+      {
+        "id": "MMc/9LeIt2RBVEyWV",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "FASTENED",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MFKV0aEk5iMZLWs7E"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  3.64246399155235e-16,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  0.0,
+                  -3.64246399155235e-16
+                ],
+                "origin": [
+                  -0.10160000000000009,
+                  -0.012700000000000032,
+                  0.07619999999999987
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MX/MVQhLo3HEw5Xxi",
+                "MO9ayVX4tvryWIv7a"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  -0.0,
+                  -0.0
+                ],
+                "origin": [
+                  0.0381,
+                  0.0,
+                  1.555301434917139e-18
+                ]
+              }
+            }
+          ],
+          "name": "ArmRight"
+        }
+      },
+      {
+        "id": "MCLHuJobgqkIxe1nx",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "FASTENED",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MAqtEnFUsX9PUNTqf",
+                "MO9ayVX4tvryWIv7a"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "zAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "origin": [
+                  0.0381,
+                  0.0,
+                  1.555301434917139e-18
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MFKV0aEk5iMZLWs7E"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  4.553079989440441e-16,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  -0.0,
+                  -4.553079989440441e-16
+                ],
+                "origin": [
+                  0.1015999999999999,
+                  -0.01270000000000001,
+                  0.07619999999999899
+                ]
+              }
+            }
+          ],
+          "name": "ArmLeft"
+        }
+      },
+      {
+        "id": "MCnFei3JGtFhey7y5",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "FASTENED",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MuMgdbZJHAkJFo4N7",
+                "Mevpj2u1ZYmgVDTjt"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "zAxis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "origin": [
+                  0.0,
+                  1.5553014349171385e-18,
+                  0.012700000000000001
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MFKV0aEk5iMZLWs7E"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  -0.0,
+                  1.0,
+                  0.0
+                ],
+                "zAxis": [
+                  -0.0,
+                  -0.0,
+                  1.0
+                ],
+                "origin": [
+                  9.336204046588827e-18,
+                  -0.01270000000000001,
+                  -0.30480000000000007
+                ]
+              }
+            }
+          ],
+          "name": "HipMount"
+        }
+      },
+      {
+        "id": "MWDo72CAaCR5uIOzp",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "REVOLUTE",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MKPPYeq9lt3DDVmBl",
+                "MQkWwHFRljMmJsSh7"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  0.0,
+                  0.0
+                ],
+                "origin": [
+                  0.08887957790334652,
+                  -1.4859030237291673e-18,
+                  -0.1016
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MuMgdbZJHAkJFo4N7",
+                "Mjv9+PPCWkAHSx9xE"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  -0.0,
+                  -1.0,
+                  -0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  -0.0,
+                  -0.0
+                ],
+                "origin": [
+                  0.07619999999999999,
+                  0.0,
+                  -0.10160000000000005
+                ]
+              }
+            }
+          ],
+          "name": "HIP_L_yaw"
+        }
+      },
+      {
+        "id": "MqHkDYMtaDWPWayKh",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "REVOLUTE",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "M+13iFfesRBZjBajq",
+                "MQkWwHFRljMmJsSh7"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -1.0,
+                  0.0,
+                  0.0
+                ],
+                "origin": [
+                  0.08887957790334652,
+                  -1.4859030237291673e-18,
+                  -0.1016
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MuMgdbZJHAkJFo4N7",
+                "Mjv9+PPCWkAHSx9xE"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  -0.0,
+                  1.0
+                ],
+                "zAxis": [
+                  1.0,
+                  -0.0,
+                  -0.0
+                ],
+                "origin": [
+                  -0.07619999999999999,
+                  0.0,
+                  -0.10160000000000005
+                ]
+              }
+            }
+          ],
+          "name": "HIP_R_yaw"
+        }
+      }
+    ],
+    "fullConfiguration": "default",
+    "configuration": "default",
+    "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+    "documentId": "ab1e3ecf79386676f5aafbf3",
+    "elementId": "1a04575f5da9887ca8043a20"
+  },
+  "subAssemblies": [
+    {
+      "instances": [
+        {
+          "name": "Lower Far <1>",
+          "suppressed": false,
+          "id": "Mlk3Qp6hfxIcrwqu+",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JuD"
+        },
+        {
+          "name": "Lower Near <1>",
+          "suppressed": false,
+          "id": "MDahaaVSwRAjtmgt7",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JhD"
+        },
+        {
+          "name": "Shoulder <1>",
+          "suppressed": false,
+          "id": "MO9ayVX4tvryWIv7a",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "J5D"
+        },
+        {
+          "name": "Upper Far <1>",
+          "suppressed": false,
+          "id": "MX4NLzTBFhZEAWf5N",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JUD"
+        },
+        {
+          "name": "Upper Near <1>",
+          "suppressed": false,
+          "id": "M0FIdWEAZ5VUFxGcO",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JHD"
+        }
+      ],
+      "patterns": [],
+      "features": [
+        {
+          "id": "MVlf+2PKQ4OQaoPaW",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "M0FIdWEAZ5VUFxGcO"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MO9ayVX4tvryWIv7a"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    0.025400000000000002,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              }
+            ],
+            "name": "RARM_ShoulderRoll"
+          }
+        },
+        {
+          "id": "MeRV423VRtZ9avT+U",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MX4NLzTBFhZEAWf5N"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.1016,
+                    0.0,
+                    3.894156718894832e-17
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "M0FIdWEAZ5VUFxGcO"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.07619999999999999,
+                    0.0,
+                    7.776507174585691e-19
+                  ]
+                }
+              }
+            ],
+            "name": "RARM_ShoulderPitch"
+          }
+        },
+        {
+          "id": "MxDyHMZM/t5wB0q+k",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MX4NLzTBFhZEAWf5N"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.25399999999999995,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MDahaaVSwRAjtmgt7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.2793999999999999,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              }
+            ],
+            "name": "RARM_UpArmRoll"
+          }
+        },
+        {
+          "id": "MrLf+d1Cj5n6M9IHn",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "Mlk3Qp6hfxIcrwqu+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    -0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.4571999999999999,
+                    0.0,
+                    1.846583391710001e-16
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MDahaaVSwRAjtmgt7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.40639999999999993,
+                    0.0,
+                    7.77650717458587e-19
+                  ]
+                }
+              }
+            ],
+            "name": "RARM_ElbowPitch"
+          }
+        }
+      ],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "abb93a8bd3ccff4656494450"
+    },
+    {
+      "instances": [
+        {
+          "name": "Lower Far <1>",
+          "suppressed": false,
+          "id": "Mlk3Qp6hfxIcrwqu+",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JuD"
+        },
+        {
+          "name": "Lower Near <1>",
+          "suppressed": false,
+          "id": "MDahaaVSwRAjtmgt7",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JhD"
+        },
+        {
+          "name": "Shoulder <1>",
+          "suppressed": false,
+          "id": "MO9ayVX4tvryWIv7a",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "J5D"
+        },
+        {
+          "name": "Upper Far <1>",
+          "suppressed": false,
+          "id": "MX4NLzTBFhZEAWf5N",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JUD"
+        },
+        {
+          "name": "Upper Near <1>",
+          "suppressed": false,
+          "id": "M0FIdWEAZ5VUFxGcO",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "baf277a88a52dfcfb01c069b",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JHD"
+        }
+      ],
+      "patterns": [],
+      "features": [
+        {
+          "id": "MVlf+2PKQ4OQaoPaW",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "M0FIdWEAZ5VUFxGcO"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MO9ayVX4tvryWIv7a"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    -0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    0.025400000000000002,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              }
+            ],
+            "name": "LARM_ShoulderRoll"
+          }
+        },
+        {
+          "id": "MeRV423VRtZ9avT+U",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MX4NLzTBFhZEAWf5N"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.1016,
+                    0.0,
+                    3.894156718894832e-17
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "M0FIdWEAZ5VUFxGcO"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.07619999999999999,
+                    0.0,
+                    7.776507174585691e-19
+                  ]
+                }
+              }
+            ],
+            "name": "LARM_ShoulderPitch"
+          }
+        },
+        {
+          "id": "MxDyHMZM/t5wB0q+k",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MX4NLzTBFhZEAWf5N"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.25399999999999995,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MDahaaVSwRAjtmgt7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.2793999999999999,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              }
+            ],
+            "name": "LARM_UpArmRoll"
+          }
+        },
+        {
+          "id": "MrLf+d1Cj5n6M9IHn",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "Mlk3Qp6hfxIcrwqu+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    -0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.4571999999999999,
+                    0.0,
+                    1.846583391710001e-16
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MDahaaVSwRAjtmgt7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.40639999999999993,
+                    0.0,
+                    7.77650717458587e-19
+                  ]
+                }
+              }
+            ],
+            "name": "LARM_ElbowPitch"
+          }
+        }
+      ],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "584f0ec3b7bb723a8c46ed1a"
+    },
+    {
+      "instances": [
+        {
+          "name": "Ankle <1>",
+          "suppressed": false,
+          "id": "MG7seNqT0uk3Gue5m",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JsD"
+        },
+        {
+          "name": "Foot <1>",
+          "suppressed": false,
+          "id": "MuJQTXP/hrRqhDxcz",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "J3D"
+        },
+        {
+          "name": "Upper Leg Near <1>",
+          "suppressed": false,
+          "id": "M25DFMiCcZAdAxBN+",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JbD"
+        },
+        {
+          "name": "Shin <1>",
+          "suppressed": false,
+          "id": "Mdl3/5KyNcTPw42ox",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JUD"
+        },
+        {
+          "name": "Upper Leg Far <1>",
+          "suppressed": false,
+          "id": "Mn+608GR1CIPU+IFC",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JHD"
+        },
+        {
+          "name": "Hip Offset <1>",
+          "suppressed": false,
+          "id": "MQkWwHFRljMmJsSh7",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "ca36c02d855675e9851da133",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JbD"
+        }
+      ],
+      "patterns": [],
+      "features": [
+        {
+          "id": "M1ESC0GM8ObM5uJ3l",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "M25DFMiCcZAdAxBN+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.025400000000000002,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mn+608GR1CIPU+IFC"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              }
+            ],
+            "name": "RLEG_ThighRoll"
+          }
+        },
+        {
+          "id": "MTG9jHC7yZX/m0rWw",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "Mdl3/5KyNcTPw42ox"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.127,
+                    0.0,
+                    -5.993767094172968e-17
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mn+608GR1CIPU+IFC"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.10160000000000001,
+                    0.0,
+                    7.776507174585691e-19
+                  ]
+                }
+              }
+            ],
+            "name": "RLEG_KneePitch"
+          }
+        },
+        {
+          "id": "MpLzamjguWQixl9p5",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MG7seNqT0uk3Gue5m"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    -0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.3746500000000001,
+                    0.0,
+                    1.166476076187854e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mdl3/5KyNcTPw42ox"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.33020000000000005,
+                    0.0,
+                    1.1664760761878537e-18
+                  ]
+                }
+              }
+            ],
+            "name": "RLEG_AnklePitch"
+          }
+        },
+        {
+          "id": "Munb7m5cJXFhnydKm",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MuJQTXP/hrRqhDxcz"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.42545000000000005,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MG7seNqT0uk3Gue5m"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.40005000000000007,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              }
+            ],
+            "name": "RLEG_AnkleYaw"
+          }
+        },
+        {
+          "id": "M/a9/OxR5lYysIf5i",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "M25DFMiCcZAdAxBN+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "origin": [
+                    0.1778,
+                    5.749095002388903e-18,
+                    0.0
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MQkWwHFRljMmJsSh7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    0.15237957790334655,
+                    0.0,
+                    -0.1016
+                  ]
+                }
+              }
+            ],
+            "name": "RLEG_HipYaw"
+          }
+        }
+      ],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "49c9c02724db9aba20f5984b"
+    },
+    {
+      "instances": [
+        {
+          "name": "Hip Attach <1>",
+          "suppressed": false,
+          "id": "Mevpj2u1ZYmgVDTjt",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "ca36c02d855675e9851da133",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JHD"
+        },
+        {
+          "name": "Hip Cntr <1>",
+          "suppressed": false,
+          "id": "Mjv9+PPCWkAHSx9xE",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "ca36c02d855675e9851da133",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JKD"
+        }
+      ],
+      "patterns": [],
+      "features": [
+        {
+          "id": "MHt9bBjSotXclGcpW",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "Mevpj2u1ZYmgVDTjt"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "origin": [
+                    0.0,
+                    1.5553014349171385e-18,
+                    0.0
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mjv9+PPCWkAHSx9xE"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    -0.0,
+                    -1.0
+                  ],
+                  "origin": [
+                    -3.343281803390626e-18,
+                    -3.343281803390626e-18,
+                    -0.025400000000000002
+                  ]
+                }
+              }
+            ],
+            "name": "HipTrunk_Roll"
+          }
+        }
+      ],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "d759a3841485268fa8ac214a"
+    },
+    {
+      "instances": [
+        {
+          "name": "Ankle <1>",
+          "suppressed": false,
+          "id": "MG7seNqT0uk3Gue5m",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JsD"
+        },
+        {
+          "name": "Foot <1>",
+          "suppressed": false,
+          "id": "MuJQTXP/hrRqhDxcz",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "J3D"
+        },
+        {
+          "name": "Upper Leg Near <1>",
+          "suppressed": false,
+          "id": "M25DFMiCcZAdAxBN+",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JbD"
+        },
+        {
+          "name": "Shin <1>",
+          "suppressed": false,
+          "id": "Mdl3/5KyNcTPw42ox",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JUD"
+        },
+        {
+          "name": "Upper Leg Far <1>",
+          "suppressed": false,
+          "id": "Mn+608GR1CIPU+IFC",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "f404e75e7ab6f72997e6a82e",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JHD"
+        },
+        {
+          "name": "Hip Offset <1>",
+          "suppressed": false,
+          "id": "MQkWwHFRljMmJsSh7",
+          "fullConfiguration": "default",
+          "configuration": "default",
+          "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+          "documentId": "ab1e3ecf79386676f5aafbf3",
+          "elementId": "ca36c02d855675e9851da133",
+          "type": "Part",
+          "isStandardContent": false,
+          "partId": "JbD"
+        }
+      ],
+      "patterns": [],
+      "features": [
+        {
+          "id": "M1ESC0GM8ObM5uJ3l",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "M25DFMiCcZAdAxBN+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.025400000000000002,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mn+608GR1CIPU+IFC"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    -0.0,
+                    -1.0,
+                    -0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    -1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    0.0,
+                    0.0,
+                    1.555301434917139e-18
+                  ]
+                }
+              }
+            ],
+            "name": "LLEG_ThighRoll"
+          }
+        },
+        {
+          "id": "MTG9jHC7yZX/m0rWw",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "Mdl3/5KyNcTPw42ox"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.127,
+                    0.0,
+                    -5.993767094172968e-17
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mn+608GR1CIPU+IFC"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.10160000000000001,
+                    0.0,
+                    7.776507174585691e-19
+                  ]
+                }
+              }
+            ],
+            "name": "LLEG_KneePitch"
+          }
+        },
+        {
+          "id": "MpLzamjguWQixl9p5",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MG7seNqT0uk3Gue5m"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    -0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.3746500000000001,
+                    0.0,
+                    1.166476076187854e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "Mdl3/5KyNcTPw42ox"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    1.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.33020000000000005,
+                    0.0,
+                    1.1664760761878537e-18
+                  ]
+                }
+              }
+            ],
+            "name": "LLEG_AnklePitch"
+          }
+        },
+        {
+          "id": "Munb7m5cJXFhnydKm",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MuJQTXP/hrRqhDxcz"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "origin": [
+                    -0.42545000000000005,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "MG7seNqT0uk3Gue5m"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    0.0,
+                    0.0,
+                    -1.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    1.0,
+                    -0.0,
+                    -0.0
+                  ],
+                  "origin": [
+                    -0.40005000000000007,
+                    0.0,
+                    1.5553014349171387e-18
+                  ]
+                }
+              }
+            ],
+            "name": "LLEG_AnkleYaw"
+          }
+        },
+        {
+          "id": "M/a9/OxR5lYysIf5i",
+          "suppressed": false,
+          "featureType": "mate",
+          "featureData": {
+            "mateType": "REVOLUTE",
+            "matedEntities": [
+              {
+                "matedOccurrence": [
+                  "MQkWwHFRljMmJsSh7"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    -0.0,
+                    0.0,
+                    1.0
+                  ],
+                  "zAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "origin": [
+                    0.15237957790334655,
+                    0.0,
+                    -0.1016
+                  ]
+                }
+              },
+              {
+                "matedOccurrence": [
+                  "M25DFMiCcZAdAxBN+"
+                ],
+                "matedCS": {
+                  "xAxis": [
+                    1.0,
+                    0.0,
+                    0.0
+                  ],
+                  "yAxis": [
+                    0.0,
+                    -1.0,
+                    0.0
+                  ],
+                  "zAxis": [
+                    -0.0,
+                    -0.0,
+                    -1.0
+                  ],
+                  "origin": [
+                    0.1778,
+                    5.749095002388903e-18,
+                    0.0
+                  ]
+                }
+              }
+            ],
+            "name": "LLEG_HipYaw"
+          }
+        }
+      ],
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "66df945eefdba5ae5e47910a"
+    }
+  ],
+  "parts": [
+    {
+      "isStandardContent": false,
+      "partId": "JHD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "bc2a207a980b7b31f13d217c"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JKD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "ca36c02d855675e9851da133"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JHD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "ca36c02d855675e9851da133"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JbD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "ca36c02d855675e9851da133"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JhD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "baf277a88a52dfcfb01c069b"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JHD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "baf277a88a52dfcfb01c069b"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JuD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "baf277a88a52dfcfb01c069b"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "J5D",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "baf277a88a52dfcfb01c069b"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JUD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "baf277a88a52dfcfb01c069b"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JHD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "f404e75e7ab6f72997e6a82e"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JUD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "f404e75e7ab6f72997e6a82e"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JsD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "f404e75e7ab6f72997e6a82e"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "J3D",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "f404e75e7ab6f72997e6a82e"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JbD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "c263efda9efd8a2217a3c8f8",
+      "documentId": "ab1e3ecf79386676f5aafbf3",
+      "elementId": "f404e75e7ab6f72997e6a82e"
+    }
+  ],
+  "partStudioFeatures": []
+}

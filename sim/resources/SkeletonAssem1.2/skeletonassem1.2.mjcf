@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<mujoco model="skeletonassem1.2">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="Hip_Cntr" file="meshes/Hip_Cntr.stl"/>
+    <mesh name="Hip_Offset" file="meshes/Hip_Offset.stl"/>
+    <mesh name="Hip_Offset_2" file="meshes/Hip_Offset_2.stl"/>
+    <mesh name="Hip_Attach" file="meshes/Hip_Attach.stl"/>
+    <mesh name="Upper_Leg_Near" file="meshes/Upper_Leg_Near.stl"/>
+    <mesh name="Upper_Leg_Near_2" file="meshes/Upper_Leg_Near_2.stl"/>
+    <mesh name="Upper_Leg_Far" file="meshes/Upper_Leg_Far.stl"/>
+    <mesh name="Upper_Leg_Far_2" file="meshes/Upper_Leg_Far_2.stl"/>
+    <mesh name="Shin" file="meshes/Shin.stl"/>
+    <mesh name="Shin_2" file="meshes/Shin_2.stl"/>
+    <mesh name="Upper_Near" file="meshes/Upper_Near.stl"/>
+    <mesh name="Upper_Near_2" file="meshes/Upper_Near_2.stl"/>
+    <mesh name="Ankle" file="meshes/Ankle.stl"/>
+    <mesh name="Ankle_2" file="meshes/Ankle_2.stl"/>
+    <mesh name="Upper_Far" file="meshes/Upper_Far.stl"/>
+    <mesh name="Upper_Far_2" file="meshes/Upper_Far_2.stl"/>
+    <mesh name="Foot" file="meshes/Foot.stl"/>
+    <mesh name="Foot_2" file="meshes/Foot_2.stl"/>
+    <mesh name="Lower_Near" file="meshes/Lower_Near.stl"/>
+    <mesh name="Lower_Near_2" file="meshes/Lower_Near_2.stl"/>
+    <mesh name="Lower_Far" file="meshes/Lower_Far.stl"/>
+    <mesh name="Lower_Far_2" file="meshes/Lower_Far_2.stl"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="Hip_Cntr"/>
+    <body name="Hip_Offset" pos="0.0762 -4.2737e-06 -0.017991" quat="0.5 0.5 -0.5 -0.5">
+      <inertial pos="0.00182333 0 -0.0325589" quat="0.998368 0 -0.0571087 0" mass="0.137158" diaginertia="8.61933e-05 8.32743e-05 1.78902e-05"/>
+      <joint name="LLEG_HipRoll" pos="0 0 0" axis="0 0 1" range="0.523599 5.75959" actuatorfrcrange="-80 80"/>
+      <geom type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="Hip_Offset"/>
+      <body name="Upper_Leg_Near" pos="0 0 -0.0635" quat="-1.64085e-08 0.707107 -1.64085e-08 -0.707107">
+        <inertial pos="-0.0836277 0 0.000772355" quat="0 0.697816 0 0.716277" mass="0.323794" diaginertia="0.000852127 0.000849813 5.0709e-05"/>
+        <joint name="LLEG_HipPitch" pos="0 0 0" axis="0 0 -1" range="1.39626 4.88692" actuatorfrcrange="-80 80"/>
+        <geom type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="Upper_Leg_Near"/>
+        <body name="Upper_Leg_Far" pos="-0.1524 0 0" quat="0.5 0.5 -0.5 -0.5">
+          <inertial pos="-0.000491765 0 0.0418309" quat="0.999886 0 -0.0150732 0" mass="0.22602" diaginertia="0.000259596 0.000259341 3.91051e-05"/>
+          <joint name="LLEG_ThighRoll" pos="0 0 0" axis="0 0 -1" range="-1.5708 1.5708" actuatorfrcrange="-80 80"/>
+          <geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="Upper_Leg_Far"/>
+          <body name="Shin" pos="0 0 0.1016" quat="-1.64085e-08 0.707107 -1.64085e-08 -0.707107">
+            <inertial pos="-0.114094 0 -0.000274716" quat="0 0.709715 0 0.704489" mass="0.404595" diaginertia="0.0017625 0.00175935 4.6411e-05"/>
+            <joint name="LLEG_KneePitch" pos="0 0 0" axis="0 0 1" range="-1.5708 0.610865" actuatorfrcrange="-80 80"/>
+            <geom type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="Shin"/>
+            <body name="Ankle" pos="-0.2032 0 0">
+              <inertial pos="-0.0202206 0 0" quat="0.707107 0.707107 0 0" mass="0.0533434" diaginertia="1.85497e-05 1.1204e-05 8.52046e-06"/>
+              <joint name="LLEG_AnklePitch" pos="0 0 0" axis="0 0 1" range="-0.610865 1.0472" actuatorfrcrange="-80 80"/>
+              <geom type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="Ankle"/>
+              <body name="Foot" pos="-0.0254 0 0" quat="0.5 -0.5 0.5 -0.5">
+                <inertial pos="0.0187187 0 -0.020389" quat="0 0.796641 0 0.604453" mass="0.181447" diaginertia="0.000183075 0.000182787 3.42791e-05"/>
+                <joint name="LLEG_AnkleYaw" pos="0 0 0" axis="0 0 1" range="-0.436332 0.436332" actuatorfrcrange="-80 80"/>
+                <geom type="mesh" rgba="0.498039 0.498039 0.498039 1" mesh="Foot"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="Hip_Offset_2" pos="-0.0762 -4.2737e-06 -0.017991" quat="0.5 0.5 0.5 0.5">
+      <inertial pos="0.00182333 0 -0.0325589" quat="0.998368 0 -0.0571087 0" mass="0.137158" diaginertia="8.61933e-05 8.32743e-05 1.78902e-05"/>
+      <joint name="RLEG_HipRoll" pos="0 0 0" axis="0 0 1" range="0.523599 5.75959" actuatorfrcrange="-80 80"/>
+      <geom type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="Hip_Offset_2"/>
+      <body name="Upper_Leg_Near_2" pos="0 0 -0.0635" quat="0.707107 0 0.707107 0">
+        <inertial pos="-0.0836277 0 -0.000772355" quat="0 0.716277 0 0.697816" mass="0.323794" diaginertia="0.000852127 0.000849813 5.0709e-05"/>
+        <joint name="RLEG_HipPitch" pos="0 0 0" axis="0 0 1" range="1.39626 4.88692" actuatorfrcrange="-80 80"/>
+        <geom type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="Upper_Leg_Near_2"/>
+        <body name="Upper_Leg_Far_2" pos="-0.1524 0 0" quat="0.5 -0.5 -0.5 0.5">
+          <inertial pos="-0.000491765 0 0.0418309" quat="0.999886 0 -0.0150732 0" mass="0.22602" diaginertia="0.000259596 0.000259341 3.91051e-05"/>
+          <joint name="RLEG_ThighRoll" pos="0 0 0" axis="0 0 -1" range="-1.5708 1.5708" actuatorfrcrange="-80 80"/>
+          <geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="Upper_Leg_Far_2"/>
+          <body name="Shin_2" pos="0 0 0.1016" quat="-1.64085e-08 0.707107 -1.64085e-08 -0.707107">
+            <inertial pos="-0.114094 0 -0.000274716" quat="0 0.709715 0 0.704489" mass="0.404595" diaginertia="0.0017625 0.00175935 4.6411e-05"/>
+            <joint name="RLEG_KneePitch" pos="0 0 0" axis="0 0 1" range="-1.5708 0.610865" actuatorfrcrange="-80 80"/>
+            <geom type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="Shin_2"/>
+            <body name="Ankle_2" pos="-0.2032 0 0">
+              <inertial pos="-0.0202206 0 0" quat="0.707107 0.707107 0 0" mass="0.0533434" diaginertia="1.85497e-05 1.1204e-05 8.52046e-06"/>
+              <joint name="RLEG_AnklePitch" pos="0 0 0" axis="0 0 1" range="-0.610865 1.0472" actuatorfrcrange="-80 80"/>
+              <geom type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="Ankle_2"/>
+              <body name="Foot_2" pos="-0.0254 0 0" quat="0.5 -0.5 0.5 -0.5">
+                <inertial pos="0.0187187 0 -0.020389" quat="0 0.796641 0 0.604453" mass="0.181447" diaginertia="0.000183075 0.000182787 3.42791e-05"/>
+                <joint name="RLEG_AnkleYaw" pos="0 0 0" axis="0 0 1" range="-0.436332 0.436332" actuatorfrcrange="-80 80"/>
+                <geom type="mesh" rgba="0.498039 0.498039 0.498039 1" mesh="Foot_2"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="Hip_Attach" pos="0 -4.2737e-06 0.058209" quat="-2.32051e-08 1 0 0">
+      <inertial pos="0 1.15856e-08 -0.26232" quat="0.707107 0 0 0.707107" mass="29.3321" diaginertia="0.606868 0.56183 0.118178"/>
+      <joint name="Waist_Roll" pos="0 0 0" axis="0 0 1" range="-2.53073 2.53073" actuatorfrcrange="-80 80"/>
+      <geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="Hip_Attach"/>
+      <body name="Upper_Near" pos="-0.1143 1.7342e-08 -0.3937" quat="0.5 0.5 0.5 0.5">
+        <inertial pos="0.000612568 0 -0.0302683" quat="0.999621 0 -0.0275397 0" mass="0.181447" diaginertia="0.000127082 0.000126733 3.42177e-05"/>
+        <joint name="RARM_ShoulderRoll" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" actuatorfrcrange="-80 80"/>
+        <geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="Upper_Near"/>
+        <body name="Upper_Far" pos="0 0 -0.0762" quat="-1.64085e-08 0.707107 1.64085e-08 0.707107">
+          <inertial pos="-0.0864787 0 -0.000352667" quat="0 0.711891 0 0.70229" mass="0.315165" diaginertia="0.000756812 0.000756642 4.87759e-05"/>
+          <joint name="RARM_ShoulderPitch" pos="0 0 0" axis="0 0 1" range="-1.48353 1.48353" actuatorfrcrange="-80 80"/>
+          <geom type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="Upper_Far"/>
+          <body name="Lower_Near" pos="-0.1524 0 0" quat="0.707107 0 -0.707107 0">
+            <inertial pos="0 -0.00041076 0.0537683" quat="0.707074 0.00684181 -0.00684181 0.707074" mass="0.270592" diaginertia="0.000464665 0.000464462 4.39496e-05"/>
+            <joint name="RARM_UpArmRoll" pos="0 0 0" axis="0 0 -1" range="-1.5708 1.5708" actuatorfrcrange="-80 80"/>
+            <geom type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="Lower_Near"/>
+            <body name="Lower_Far" pos="0 0 0.127" quat="0.5 0.5 0.5 -0.5">
+              <inertial pos="-0.112611 0 -0.000274909" quat="0 0.709864 0 0.704338" mass="0.404311" diaginertia="0.00166013 0.00166 5.84028e-05"/>
+              <joint name="RARM_ElbowPitch" pos="0 0 0" axis="0 0 1" range="-2.79253 2.79253" actuatorfrcrange="-80 80"/>
+              <geom type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="Lower_Far"/>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="Upper_Near_2" pos="0.1143 1.80226e-08 -0.3937" quat="0.5 0.5 -0.5 -0.5">
+        <inertial pos="0.000612568 0 -0.0302683" quat="0.999621 0 -0.0275397 0" mass="0.181447" diaginertia="0.000127082 0.000126733 3.42177e-05"/>
+        <joint name="LARM_ShoulderRoll" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" actuatorfrcrange="-80 80"/>
+        <geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="Upper_Near_2"/>
+        <body name="Upper_Far_2" pos="0 0 -0.0762" quat="-1.64085e-08 0.707107 1.64085e-08 0.707107">
+          <inertial pos="-0.0864787 0 -0.000352667" quat="0 0.711891 0 0.70229" mass="0.315165" diaginertia="0.000756812 0.000756642 4.87759e-05"/>
+          <joint name="LARM_ShoulderPitch" pos="0 0 0" axis="0 0 1" range="-1.48353 1.48353" actuatorfrcrange="-80 80"/>
+          <geom type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="Upper_Far_2"/>
+          <body name="Lower_Near_2" pos="-0.1524 0 0" quat="0.707107 0 -0.707107 0">
+            <inertial pos="0 -0.00041076 0.0537683" quat="0.707074 0.00684181 -0.00684181 0.707074" mass="0.270592" diaginertia="0.000464665 0.000464462 4.39496e-05"/>
+            <joint name="LARM_UpArmRoll" pos="0 0 0" axis="0 0 -1" range="-1.5708 1.5708" actuatorfrcrange="-80 80"/>
+            <geom type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="Lower_Near_2"/>
+            <body name="Lower_Far_2" pos="0 0 0.127" quat="0.5 0.5 0.5 -0.5">
+              <inertial pos="-0.112611 0 -0.000274909" quat="0 0.709864 0 0.704338" mass="0.404311" diaginertia="0.00166013 0.00166 5.84028e-05"/>
+              <joint name="LARM_ElbowPitch" pos="0 0 0" axis="0 0 1" range="-2.79253 2.79253" actuatorfrcrange="-80 80"/>
+              <geom type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="Lower_Far_2"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
