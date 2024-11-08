@@ -1,4 +1,4 @@
-"""Defines the environment configuration for the walking task"""
+"""Defines the environment configuration for the Getting up task"""
 
 from sim.env import robot_urdf_path
 from sim.envs.base.legged_robot_config import (  # type: ignore
@@ -7,7 +7,7 @@ from sim.envs.base.legged_robot_config import (  # type: ignore
 )
 from sim.resources.stompypro.joints import Robot
 
-NUM_JOINTS = len(Robot.all_joints())  # 12
+NUM_JOINTS = len(Robot.all_joints())
 
 
 class StompyProCfg(LeggedRobotCfg):
@@ -31,25 +31,6 @@ class StompyProCfg(LeggedRobotCfg):
         pos_limit = 1.0
         vel_limit = 1.0
         torque_limit = 0.85
-        termination_height = 0.1
-        terminate_after_contacts_on = [
-            "base",
-            "trunk",
-            "L_buttock",
-            "L_leg",
-            "L_thigh",
-            "L_calf",
-            "L_clav",
-            "L_scapula",
-            "L_uarm",
-            "L_farm",
-            "R_buttock",
-            "R_leg",
-            "R_thigh",
-            "R_calf",
-            "R_clav",
-            "R_scapula",
-        ]
 
     class asset(LeggedRobotCfg.asset):
         name = "stompypro"
@@ -58,10 +39,10 @@ class StompyProCfg(LeggedRobotCfg):
 
         foot_name = ["L_foot", "R_foot"]
         knee_name = ["L_calf", "R_calf"]
+        imu_name = "imu_link"
 
         termination_height = 0.2
         default_feet_height = 0.0
-        terminate_after_contacts_on = ["base", "L_thigh", "R_thigh"]
 
         penalize_contacts_on = []
         self_collisions = 0  # 1 to disable, 0 to enable...bitwise filter
@@ -70,8 +51,8 @@ class StompyProCfg(LeggedRobotCfg):
         fix_base_link = False
 
     class terrain(LeggedRobotCfg.terrain):
-        mesh_type = "plane"
-        # mesh_type = 'trimesh'
+        # mesh_type = "plane"
+        mesh_type = "trimesh"
         curriculum = False
         # rough terrain only:
         measure_heights = False
@@ -114,7 +95,7 @@ class StompyProCfg(LeggedRobotCfg):
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.25
         # decimation: Number of control action updates @ sim DT per policy DT
-        decimation = 20  # 100hz
+        decimation = 10  # 100hz
 
     class sim(LeggedRobotCfg.sim):
         dt = 0.001  # 1000 Hz
@@ -140,14 +121,14 @@ class StompyProCfg(LeggedRobotCfg):
         friction_range = [0.1, 2.0]
 
         randomize_base_mass = True
-        added_mass_range = [-1.0, 1.0]
+        added_mass_range = [-5.0, 5.0]
         push_robots = True
         push_interval_s = 4
-        max_push_vel_xy = 0.3  # 0.2
+        max_push_vel_xy = 0.2
         max_push_ang_vel = 0.4
         # dynamic randomization
-        action_delay = 0.5
         action_noise = 0.02
+        action_delay = 0.5
 
     class commands(LeggedRobotCfg.commands):
         # Vers: lin_vel_x, lin_vel_y, ang_vel_yaw, heading (in heading mode ang_vel_yaw is recomputed from heading error)
@@ -159,7 +140,7 @@ class StompyProCfg(LeggedRobotCfg):
             lin_vel_x = [-0.3, 0.6]  # min max [m/s]
             lin_vel_y = [-0.3, 0.3]  # min max [m/s]
             ang_vel_yaw = [-0.3, 0.3]  # min max [rad/s]
-            heading = [-0.14, 0.14]
+            heading = [-3.14, 3.14]
 
     # a - normal
     # b - negate target_join_pos_scale (-0.14)
@@ -167,38 +148,39 @@ class StompyProCfg(LeggedRobotCfg):
         # quite important to keep it right
         base_height_target = 0.63
         min_dist = 0.2
-        max_dist = 0.4
+        max_dist = 0.5
         # put some settings here for LLM parameter tuning
-        target_joint_pos_scale = 0.14  # rad
-        target_feet_height = 0.05  # m
-        cycle_time = 0.5  # sec
+        target_joint_pos_scale = 0.17  # rad
+        target_feet_height = 0.06  # m
+
+        cycle_time = 0.4  # sec
         # if true negative total rewards are clipped at zero (avoids early termination problems)
         only_positive_rewards = True
         # tracking reward = exp(error*sigma)
-        tracking_sigma = 5
-        max_contact_force = 500  # forces above this value are penalized
+        tracking_sigma = 5.0
+        max_contact_force = 400  # forces above this value are penalized
 
         class scales:
             # reference motion tracking
-            joint_pos = 1.6  # 1.6
-            feet_clearance = 1.5  # 1.0
-            feet_contact_number = 2.1  # 1.2
+            joint_pos = 1.9
+            feet_clearance = 1.7
+            feet_contact_number = 1.7
             # gait
-            feet_air_time = 2.5  # 1.0
+            feet_air_time = 1.6
             foot_slip = -0.05
-            feet_distance = 0.2  # 0.2
+            feet_distance = 0.2
             knee_distance = 0.2
-            # # contact
+            # contact
             feet_contact_forces = -0.01
-            # # vel tracking
-            tracking_lin_vel = 2
-            tracking_ang_vel = 1.1  # 1.1
+            # vel tracking
+            tracking_lin_vel = 1.0
+            tracking_ang_vel = 1.0
             vel_mismatch_exp = 0.5  # lin_z; ang x,y
             low_speed = 0.2
-            track_vel_hard = 0.5  # 0.5
+            track_vel_hard = 0.5
 
             # base pos
-            default_joint_pos = 1.0
+            default_joint_pos = 0.5
             orientation = 1
             base_height = 0.2
             base_acc = 0.2
@@ -208,6 +190,24 @@ class StompyProCfg(LeggedRobotCfg):
             dof_vel = -5e-4
             dof_acc = -1e-7
             collision = -1.0
+
+            # reference motion tracking
+            joint_pos = 1.6
+            feet_clearance = 1.6
+            feet_contact_number = 1.2
+            # gait
+            feet_air_time = 1.6
+            foot_slip = -0.05
+            feet_distance = 0.2
+            knee_distance = 0.2
+            # contact
+            feet_contact_forces = -0.01
+            # vel tracking
+            tracking_lin_vel = 1.2
+            tracking_ang_vel = 1.1
+            vel_mismatch_exp = 0.5  # lin_z; ang x,y
+            low_speed = 0.2
+            track_vel_hard = 0.5
 
     class normalization:
         class obs_scales:

@@ -96,75 +96,45 @@ class Robot(Node):
     legs = Legs()
     # arms = Arms()
 
-    # NOTE: THIS IS VERY IMPORTANT FOR URDF to MJCF CONVERSION
-    collision_links: List[str] = []  # None because StompyPro feet are boxes
-
     height = 0.63
     rotation = [0.0, 0.0, 0, 1]
+
+    @classmethod
+    def isaac_to_mujoco_signs(cls) -> Dict[str, int]:
+        return {
+            Robot.legs.left.hip_pitch: 1,
+            Robot.legs.left.hip_yaw: 1,
+            Robot.legs.left.hip_roll: 1,
+            Robot.legs.left.knee_pitch: 1,
+            Robot.legs.left.ankle_pitch: 1,
+            Robot.legs.right.hip_pitch: 1,
+            Robot.legs.right.hip_yaw: 1,
+            Robot.legs.right.hip_roll: 1,
+            Robot.legs.right.knee_pitch: 1,
+            Robot.legs.right.ankle_pitch: 1,
+        }
 
     @classmethod
     def default_positions(cls) -> Dict[str, float]:
         return {}
 
+    """This should be ordered according to how the policy is trained. E.g. the first
+    entry should be the angle of the first joint in the policy."""
+
     @classmethod
     def default_standing(cls) -> Dict[str, float]:
         return {
-            Robot.legs.left.hip_pitch: -0.157,
-            Robot.legs.left.hip_yaw: 0.0394,
-            Robot.legs.left.hip_roll: 0.0628,
+            Robot.legs.left.hip_pitch: -0.23,
+            Robot.legs.left.hip_yaw: 0.0,
+            Robot.legs.left.hip_roll: 0.0,
             Robot.legs.left.knee_pitch: 0.441,
             Robot.legs.left.ankle_pitch: -0.258,
-            Robot.legs.right.hip_pitch: -0.22,
-            Robot.legs.right.hip_yaw: 0.026,
-            Robot.legs.right.hip_roll: 0.0314,
+            Robot.legs.right.hip_pitch: -0.23,
+            Robot.legs.right.hip_yaw: 0.0,
+            Robot.legs.right.hip_roll: 0.0,
             Robot.legs.right.knee_pitch: 0.441,
-            Robot.legs.right.ankle_pitch: -0.223,
+            Robot.legs.right.ankle_pitch: -0.258,
         }
-
-    # @classmethod
-    # def default_limits(cls) -> Dict[str, Dict[str, float]]:
-    #     return {
-    #         Robot.legs.left.hip_pitch: {
-    #             "lower": 0.5,
-    #             "upper": 2.69,
-    #         },
-    #         Robot.legs.left.hip_yaw: {
-    #             "lower": 0.5,
-    #             "upper": 1.19,
-    #         },
-    #         Robot.legs.left.hip_roll: {
-    #             "lower": -0.5,
-    #             "upper": 0.5,
-    #         },
-    #         Robot.legs.left.knee_pitch: {
-    #             "lower": -2.14,
-    #             "upper": -1.0,
-    #         },
-    #         Robot.legs.left.ankle_pitch: {
-    #             "lower": -0.8,
-    #             "upper": 0.6,
-    #         },
-    #         Robot.legs.right.hip_pitch: {
-    #             "lower": -1,
-    #             "upper": 1,
-    #         },
-    #         Robot.legs.right.hip_yaw: {
-    #             "lower": -2.6,
-    #             "upper": -1.5,
-    #         },
-    #         Robot.legs.right.hip_roll: {
-    #             "lower": -2.39,
-    #             "upper": -1,
-    #         },
-    #         Robot.legs.right.knee_pitch: {
-    #             "lower": 2.09,
-    #             "upper": 3.2,
-    #         },
-    #         Robot.legs.right.ankle_pitch: {
-    #             "lower": 0,
-    #             "upper": 1.5,
-    #         },
-    #     }
 
     @classmethod
     def default_limits(cls) -> Dict[str, Dict[str, float]]:
@@ -174,11 +144,11 @@ class Robot(Node):
     @classmethod
     def stiffness(cls) -> Dict[str, float]:
         return {
-            "hip_y": 120,
-            "hip_x": 60,
-            "hip_z": 60,
-            "knee": 120,
-            "ankle_y": 17,
+            "hip_y": 300,
+            "hip_x": 200,
+            "hip_z": 200,
+            "knee": 300,
+            "ankle_y": 300,
         }
 
     # d_gains
@@ -189,33 +159,31 @@ class Robot(Node):
             "hip_x": 10,
             "hip_z": 10,
             "knee": 10,
-            "ankle_y": 5,
+            "ankle_y": 10,
         }
 
-    # pos_limits
+    # # pos_limits
     @classmethod
     def effort(cls) -> Dict[str, float]:
-        return {}
+        return {
+            "hip_y": 250,
+            "hip_x": 100,
+            "hip_z": 100,
+            "knee": 250,
+            "ankle_y": 17,
+        }
 
-    # vel_limits
+    # # vel_limits
     @classmethod
     def velocity(cls) -> Dict[str, float]:
-        return {
-            "hip": 5,
-            "knee": 5,
-            "ankle": 5,
-            "shoulder_y": 5,
-            "shoulder_z": 5,
-            "shoulder_x": 5,
-            "elbow_x": 5,
-        }
+        return {"hip": 10, "knee": 10, "ankle": 10}
 
     @classmethod
     def friction(cls) -> Dict[str, float]:
         return {
             "hip": 0,
             "knee": 0,
-            "ankle": 0,
+            "ankle": 0.01,
         }
 
 
